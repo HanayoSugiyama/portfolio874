@@ -41,16 +41,16 @@ $(document).ready(function () {
 });  //ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
-//モーダルガンダム
+/*モーダルガンダム
 $('.btn').modalVideo({
   channel: 'custom',
-  url: '../images/works/gundam.mp4' // 相対パスでもOK
+  url: '../images/' // 相対パスでもOK
 });
 //モーダル
 $('.btn3').modalVideo({
   channel: 'custom',
-  url: '../images/works/souji.mp4' // 相対パスでもOK
+  url: '../images/works/' // 相対パスでもOK
 });
 
-//モーダルここまで
+モーダルここまで*/
 
