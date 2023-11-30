@@ -1,0 +1,21 @@
+//変数準備
+$c-font:#333333;
+$c-font2:#6600cc;
+$c-bg:#fffff9;
+$c-bg2:rgba(204,204,255,0.4);
+$c-bg3:#fbfaf5;
+$c-bg4:rgba(204,204,255,1);
+
+
+$ff-normal:'Kaisei Opti', serif;
+$ff-strong:'Miltonian Tattoo', serif;
+$ff-cursive:'Ephesis', cursive;
+//メディアクエリ
+$sp:768px;
+
+@mixin sp {
+    @media (max-width:($sp)){
+        @content;
+    }
+}
+

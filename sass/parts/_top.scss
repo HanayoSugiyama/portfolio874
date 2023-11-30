@@ -1,0 +1,37 @@
+@use "variables"as v;
+
+.top {
+    height: 100vh;
+    display: flex;
+}
+
+.topText {
+    margin-top: 25%;
+    margin-left: 5%;
+    font-family: v.$ff-strong;
+
+    &__title {
+        font-size: 128px;
+    }
+
+    &__rose {
+        font-size: 40px;
+        font-weight: bold;
+        padding-left: 5rem;
+        margin-top: 50px;
+    }
+}
+
+
+/*ほのかに光りながら出現*/
+.glowAnime p {opacity: 0;}
+.glowAnime span{opacity: 0;}
+
+/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
+.glowAnime.glow span{ animation:glow_anime_on 1.5s ease-out forwards; }
+
+@keyframes glow_anime_on{
+  0% { opacity:0; text-shadow: 0 0 0 v.$c-bg,0 0 0 v.$c-bg;}
+  50% { opacity:1;text-shadow: 0 0 2px blue,0 0 0 v.$c-bg; }
+  100% { opacity:1; text-shadow: 0 0 0 v.$c-bg,0 0 0 v.$c-bg;}
+}
