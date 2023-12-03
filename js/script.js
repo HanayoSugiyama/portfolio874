@@ -41,16 +41,16 @@ $(document).ready(function () {
 });  //ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
-/*モーダルガンダム
-$('.btn').modalVideo({
-  channel: 'custom',
-  url: '../images/' // 相対パスでもOK
-});
 //モーダル
-$('.btn3').modalVideo({
-  channel: 'custom',
-  url: '../images/works/' // 相対パスでもOK
+$(".video-open").modaal({
+	type: 'video',
+	overlay_close:true,//モーダル背景クリック時に閉じるか
+	background: '#28BFE7', // 背景色
+	overlay_opacity:0.8, // 透過具合
+    youtube: {
+       autoplay: 1,
+       mute: 1,
+   }
 });
-
-モーダルここまで*/
+//モーダルここまで
 
