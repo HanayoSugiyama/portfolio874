@@ -12,7 +12,7 @@ html {
 
 body {
   color: #333333;
-  background-color: #fffff9;
+  background-image: linear-gradient(-20deg, #ddd6f3 0%, rgba(251, 218, 222, 0.5) 100%, rgba(251, 218, 222, 0.5) 100%);
   font-family: "Kaisei Opti", serif;
   font-size: 16px;
 }
@@ -221,6 +221,7 @@ h3 {
   margin: 0 auto;
   padding-left: 50px;
 }
+
 @media (max-width: 1030px) {
   .history-flex {
     display: block;
