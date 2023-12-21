@@ -8,9 +8,9 @@
 
 .check__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
-  gap: 1rem;
-  padding: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(278px, 1fr));
+  gap: 0.5rem;
+  padding: 2rem;
 }
 
 
@@ -65,7 +65,7 @@
   background: v.$c-bg3;
   /*背景色*/
   border-radius: 20px;
-  padding: 20px;
+  padding: 1rem;
   color: v.$c-font;
   /*テキストの色を変えたい場合はここを修正*/
 
@@ -82,7 +82,7 @@
 
 /*裏の中身の設定*/
 h4 {
-  font-size: 24px;
+  font-size: 1.25rem;
   margin: 10px 0;
 }
 
@@ -103,7 +103,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
-    padding: 40px;
+    padding: 2rem;
   }
 
   &__title {
