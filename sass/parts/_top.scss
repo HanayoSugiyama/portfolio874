@@ -1,37 +1,25 @@
 @use "variables"as v;
 
 .top {
-    height: 100vh;
-    display: flex;
-}
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top,#4CA1AF, #C4E0E5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,#4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 
-.topText {
-    margin-top: 25%;
-    margin-left: 5%;
-    font-family: v.$ff-strong;
 
-    &__title {
-        font-size: 128px;
+    &__gif {
+        display: block;
+        margin: 0 auto;
     }
 
-    &__rose {
-        font-size: 40px;
-        font-weight: bold;
-        padding-left: 5rem;
-        margin-top: 50px;
+    &__img {
+        text-align: center;
     }
-}
 
-
-/*ほのかに光りながら出現*/
-.glowAnime p {opacity: 0;}
-.glowAnime span{opacity: 0;}
-
-/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
-.glowAnime.glow span{ animation:glow_anime_on 1.5s ease-out forwards; }
-
-@keyframes glow_anime_on{
-  0% { opacity:0; text-shadow: 0 0 0 v.$c-bg,0 0 0 v.$c-bg;}
-  50% { opacity:1;text-shadow: 0 0 2px blue,0 0 0 v.$c-bg; }
-  100% { opacity:1; text-shadow: 0 0 0 v.$c-bg,0 0 0 v.$c-bg;}
+    &__text {
+        font-family: v.$ff-strong;
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 250px;
+    }
 }

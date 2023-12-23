@@ -1,6 +1,9 @@
 @use "variables"as v;
 
 .works {
+  &__top {
+    margin-top: 2rem;
+  }
   &__title {
     font-size: 1.25rem;
     margin-bottom: 1rem;

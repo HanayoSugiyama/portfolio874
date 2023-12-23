@@ -64,7 +64,6 @@ ol {
 h3 {
   font-size: 24px;
   text-align: left;
-  margin-top: 2rem;
 }
 
 .wrapper {
@@ -81,75 +80,29 @@ h3 {
 }
 
 .top {
-  height: 100vh;
-  display: flex;
+  background: #4CA1AF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4CA1AF, #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.topText {
-  margin-top: 25%;
-  margin-left: 5%;
+.top__gif {
+  display: block;
+  margin: 0 auto;
+}
+.top__img {
+  text-align: center;
+}
+.top__text {
   font-family: "Miltonian Tattoo", serif;
-}
-.topText__title {
-  font-size: 128px;
-}
-.topText__rose {
-  font-size: 40px;
-  font-weight: bold;
-  padding-left: 5rem;
-  margin-top: 50px;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 250px;
 }
 
-/*ほのかに光りながら出現*/
-.glowAnime p {
-  opacity: 0;
-}
-
-.glowAnime span {
-  opacity: 0;
-}
-
-/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
-.glowAnime.glow span {
-  -webkit-animation: glow_anime_on 1.5s ease-out forwards;
-          animation: glow_anime_on 1.5s ease-out forwards;
-}
-
-@-webkit-keyframes glow_anime_on {
-  0% {
-    opacity: 0;
-    text-shadow: 0 0 0 #fffff9, 0 0 0 #fffff9;
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 2px blue, 0 0 0 #fffff9;
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 0 #fffff9, 0 0 0 #fffff9;
-  }
-}
-
-@keyframes glow_anime_on {
-  0% {
-    opacity: 0;
-    text-shadow: 0 0 0 #fffff9, 0 0 0 #fffff9;
-  }
-  50% {
-    opacity: 1;
-    text-shadow: 0 0 2px blue, 0 0 0 #fffff9;
-  }
-  100% {
-    opacity: 1;
-    text-shadow: 0 0 0 #fffff9, 0 0 0 #fffff9;
-  }
-}
 .profile {
   height: auto;
   margin: 0 auto;
 }
 .profile__opa {
-  background-image: linear-gradient(179.4deg, rgba(230, 249, 255, 0.1) 5%, rgba(204, 204, 255, 0.2) 95%);
+  background-color: #fff9ff;
   border-radius: 20px;
   padding: 20px;
 }
@@ -157,10 +110,20 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
+}
+.profile__name {
+  margin-bottom: 1rem;
 }
 .profile__theme__photo {
   margin: 0 auto;
-  padding-left: 50px;
+}
+
+.history__content {
+  margin-bottom: 1rem;
+}
+.history__space dd {
+  padding-left: 2rem;
 }
 
 @media (max-width: 1030px) {
@@ -280,6 +243,9 @@ h4 {
   padding-top: 1rem;
 }
 
+.works__top {
+  margin-top: 2rem;
+}
 .works__title {
   font-size: 1.25rem;
   margin-bottom: 1rem;

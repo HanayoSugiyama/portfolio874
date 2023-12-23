@@ -1,4 +1,10 @@
-'use strict'; // glowAnimeにglowというクラス名を付ける定義
+'use strict';
+
+setTimeout(function() {
+  document.querySelector('.top__gif').style.display = 'none';
+}, 7500);
+
+/* glowAnimeにglowというクラス名を付ける定義
 function GlowAnimeControl() {
   $('.glowAnime').each(function () {
     var elemPos = $(this).offset().top - 50;
@@ -38,7 +44,7 @@ $(document).ready(function () {
     });
   }, 500);
   GlowAnimeControl(); // アニメーション用の関数を呼ぶ
-});  //ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+});  //ここまで画面が読み込まれたらすぐに動かしたい場合の記述*/
 
 
 //モーダル

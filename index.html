@@ -41,10 +41,12 @@
         <!--赤から青へ変えたいな-->
         <section id="box1" class="box" data-section-name="Area1">
             <div class="top">
-                <img src="images/top/bg-bluerose.gif" alt="薔薇の背景">
-                <div class="topText">
+                <img class="top__gif" src="images/top/toppage.gif" alt="薔薇のGIF">
+            </div>
+            <div class="top__img">
+                <img src="images/top/top-bluerose.gif" alt="薔薇の背景">
+                <div class="top__text">
                     <h1 class="topText__title">Bluerose</h1>
-                    <p id="glowAnime" class="topText__rose glowAnime">青い薔薇が教えてくれる 夢を叶えるための秘訣</p>
                 </div>
             </div>
         </section>
@@ -53,91 +55,61 @@
                 <div class="profile">
                     <h2 class="title" data-en="Profile"><span>自己紹介</span></h2>
                     <div class="profile__theme">
-                        <div>
-                            <h3>杉山 花代 <small>~ Hanayo Sugiyama ~</small></h3>
-                        </div>
                         <div class="profile__grid">
-                            <div class="profile__opa">
-                                <p>私は「Bluerose」を自分自身のテーマとして掲げています。</p>
-                                <p>
-                                    青い薔薇の花言葉は、1990年代までは「不可能」とされていました。というのも、薔薇には青色素が存在しないため、青い薔薇を作ることは不可能だと考えられていたからです。しかし、1996年にサントリー社が青い薔薇を開発し、花言葉も「夢が叶う」「奇跡」と変更されました。<br>
-                                    この逸話は、自身のキャリア形成にも当てはまると考え、自分が目指すものを信じ、努力を続けるよう心掛けています。
-                                </p>
+                            <div>
+                                <h3 class="profile__name">杉山 花代 <small>~ Hanayo Sugiyama ~</small></h3>
+                                <div class="profile__opa">
+                                    <p>私は「Bluerose」を自分自身のテーマとして掲げています。</p>
+                                    <p>
+                                        青い薔薇の花言葉は、1990年代までは「不可能」とされていました。というのも、薔薇には青色素が存在しないため、青い薔薇を作ることは不可能だと考えられていたからです。しかし、1996年にサントリー社が青い薔薇を開発し、花言葉も「夢が叶う」「奇跡」と変更されました。<br>
+                                        この逸話は、自身のキャリア形成にも当てはまると考え、自分が目指すものを信じ、努力を続けるよう心掛けています。
+                                    </p>
+                                </div>
                             </div>
 
                             <div class="profile__theme__photo">
-                                <img src="images/huhu.jpg" alt="">
+                                <img src="images/bara.gif" alt="">
                             </div>
                         </div>
 
-                        <div class="profile__history">
+                        <div class="history">
                             <div class="profile__grid">
                                 <div class="profile__opa">
                                     <h3>学歴</h3>
-                                    <ol class="profile__history__content">
+                                    <ol class="history__content">
                                         <li>広島県立呉三津田高等学校 普通科 卒業</li>
                                         <li>広島工業大学 環境学部 環境デザイン学科 卒業</li>
                                     </ol>
                                 </div>
                                 <div class="profile__opa">
-                                    <h3 class="profile__history__content">職歴</h3>
+                                    <h3 class="history__content">職歴</h3>
                                     <p class="history-space">経理事務を中心に、ISOの新規取得、基幹システム刷新プロジェクトなど多種多様な業務を経験してまいりました。<br>
                                         そのほか、小中学校でのパソコンの先生、木工所で家具職人の経験もあります。</p>
                                 </div>
                                 <div class="profile__opa">
-                                    <h3 class="profile__history__content">職業訓練歴</h3>
-                                    <dl class="history-space">
+                                    <h3 class="history__content">職業訓練歴</h3>
+                                    <dl class="history__space">
                                         <dt>株式会社アイシー</dt>
-                                        <dd>ITサービス科 修了</dd>
+                                        <dd>ITサービス科 修了(2012年)
+                                        </dd>
                                         <dt>株式会社Social Bridge</dt>
-                                        <dd>経理事務科 修了</dd>
+                                        <dd>経理事務科 修了（2014年）</dd>
                                         <dt>株式会社ビットゼミ</dt>
-                                        <dd>アプリ製作できる事務職【市民開発者】養成科 修了</dd>
+                                        <dd>アプリ製作できる事務職【市民開発者】養成科 修了（2021年）</dd>
                                         <dt>パソコンスクールHA＊NA</dt>
-                                        <dd>Webデザイナー養成科 修了予定</dd>
+                                        <dd>Webデザイナー養成科 修了（2023年）</dd>
                                     </dl>
                                 </div>
                                 <div class="profile__opa">
-                                    <h3 class="profile__history__content">趣味</h3>
-                                    <p class="profile__history__content"><strong>トライ＆エラー</strong></p>
-                                    <p class="profile__history__content">
+                                    <h3 class="history__content">趣味</h3>
+                                    <p class="history__content"><strong>トライ＆エラー</strong></p>
+                                    <p class="history__content">
                                         失敗を恐れずにとにかく挑戦する【トライ＆エラー】自体が趣味です。<br>
                                         失敗は学びの源泉です！<br>
                                         失敗を分析して、次のアクションを考え試す。<br>
                                         成功し喜びを噛みしめる時の感触がたまらなく好きです。
                                     </p>
                                 </div>
-
-
-                                <!-- <div>
-                                    <div class="profile__opa">
-                                        <h3>資格・検定</h3>
-                                        <div class="history-space">
-                                            <b class="test__title">経理関係</b>
-                                            <ul class="test">
-                                                <li>日本商工会議所 簿記検定試験 2級</li>
-                                                <li>大阪商工会議所 ビジネス会計検定試験 ３級</li>
-                                            </ul>
-                                            <b class="test__title">Web関係</b>
-                                            <ul class="test">
-                                                <li>Ｗｅｂクリエイター能力認定試験 エキスパート</li>
-                                            </ul>
-                                            <b class="test__title">Microsoft関係</b>
-                                            <ul class="test">
-                                                <li>Power Platform Fundamentals(PL-900)</li>
-                                                <li>Microsoft Office Specialist 365＆2019 Expert<br>
-                                                    Word,Excel,Access</li>
-                                                <li>Microsoft Office Specialist 365＆2019<br>
-                                                    PowerPoint </li>
-                                                <li>Excel VBA ベーシック</li>
-                                            </ul>
-                                            <b class="test__title">その他</b>
-                                            <ul class="test">
-                                                <li>運行管理者（貨物）</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -270,7 +242,7 @@
             <section>
                 <h2 class="title" data-en="Works"><span>作品</span></h2>
                 <div>
-                    <h3>サイト作成</h3>
+                    <h3 class="works__top">サイト作成</h3>
                     <div class="works__site">
                         <div class="works__sample">
                             <p class="works__title">【架空サイト】蕎麦処健康堂<small>（入校4ヶ月目 課題）</small></p>
@@ -346,7 +318,7 @@
                 </div>
 
                 <div>
-                    <h3>デザイン</h3>
+                    <h3 class="works__top">デザイン</h3>
                     <div class="works__design">
                         <div class="works__sample">
 
@@ -380,7 +352,7 @@
                 </div>
 
                 <div>
-                    <h3>アプリ製作</h3>
+                    <h3 class="works__top">アプリ製作</h3>
                     <div class="works__app">
                         <div class="works__sample">
                             <p class="apps works__title">ガンダムオリジン第6話 登場人物リストアプリ</p>
