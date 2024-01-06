@@ -44,7 +44,7 @@ ol {
 	padding-left: 40px;
 	font-size: 48px;
 	padding-top:20px;
-	margin-bottom: 50p;
+	margin-bottom: 50px;
 }
 
 .title span {
@@ -67,6 +67,37 @@ ol {
 	font-family: v.$ff-cursive
 }
 //ここまでセクションタイトル設定
+
+//リンク先セクションタイトル設定
+.workstitle {
+	margin-top: 50px;
+	position: relative;
+	padding-left: 40px;
+	font-size: 48px;
+	padding-top:20px;
+	margin-bottom: 50px;
+}
+
+.workstitle span {
+	position: relative;
+	z-index: 0;
+}
+
+.workstitle::before {
+	/*英字テキスト*/
+	content: attr(data-en);
+	/*データ属性読み込み*/
+	position: absolute;
+	transform: rotate(-10deg);
+	/*斜めに傾ける*/
+	top: 0;
+	left: 0;
+	color:aqua;
+	font-size: 60px;
+	font-weight: 400;
+	font-family: v.$ff-cursive
+}
+//ここまでリンク先セクションタイトル設定
 
 h3 {
 	font-size: 24px;
