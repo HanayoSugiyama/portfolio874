@@ -31,6 +31,7 @@ a {
 	text-decoration: none;
 }
 
+
 ul,
 ol {
 	list-style: none;
@@ -61,7 +62,7 @@ ol {
 	/*斜めに傾ける*/
 	top: 0;
 	left: 0;
-	color:aqua;
+	color:#0bd;
 	font-size: 60px;
 	font-weight: 400;
 	font-family: v.$ff-cursive
@@ -92,10 +93,15 @@ ol {
 	/*斜めに傾ける*/
 	top: 0;
 	left: 0;
-	color:aqua;
+	color:#0bd;
 	font-size: 60px;
 	font-weight: 400;
 	font-family: v.$ff-cursive
+}
+@media (max-width: 768px) {
+	.workstitle{
+		margin-left: 1rem;
+	}
 }
 //ここまでリンク先セクションタイトル設定
 

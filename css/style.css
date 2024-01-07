@@ -55,7 +55,7 @@ ol {
   /*斜めに傾ける*/
   top: 0;
   left: 0;
-  color: aqua;
+  color: #0bd;
   font-size: 60px;
   font-weight: 400;
   font-family: "Ephesis", cursive;
@@ -84,12 +84,17 @@ ol {
   /*斜めに傾ける*/
   top: 0;
   left: 0;
-  color: aqua;
+  color: #0bd;
   font-size: 60px;
   font-weight: 400;
   font-family: "Ephesis", cursive;
 }
 
+@media (max-width: 768px) {
+  .workstitle {
+    margin-left: 1rem;
+  }
+}
 h3 {
   font-size: 24px;
   text-align: left;
@@ -227,7 +232,7 @@ h3 {
   transform-origin: 50% 0%;
   /*回転する基点*/
   opacity: 0;
-  background: #fbfaf5;
+  background: #fff9ff;
   /*背景色*/
   border-radius: 20px;
   padding: 1rem;
@@ -305,7 +310,7 @@ h4 {
 .works__design__img {
   text-align: center;
   margin-bottom: 30px;
-  height: 500px;
+  height: 350px;
 }
 .works__design__img img {
   -o-object-fit: contain;
@@ -328,6 +333,26 @@ h4 {
      object-fit: contain;
   height: 100%;
 }
+.works__event {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  gap: 80px;
+  margin-top: 40px;
+}
+.works__event__img {
+  text-align: center;
+  margin-bottom: 30px;
+  height: 200px;
+}
+.works__event__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+a.hover:hover {
+  cursor: url(../images/click.png), auto;
+}
 
 .app__content__btn a {
   background: #eee;
@@ -342,7 +367,7 @@ h4 {
   color: #313131;
   transition: 0.3s ease-in-out;
   font-weight: 600;
-  box-shadow: 5px 5px 0 #6bb6ff;
+  box-shadow: 5px 5px 0 #0bd;
 }
 .app__content__btn a:hover {
   background-color: #b3d9ff;
@@ -353,17 +378,39 @@ h4 {
   padding: 100px;
 }
 
+@media (max-width: 768px) {
+  .app__content__btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 220px;
+    padding: 10px 25px;
+  }
+}
 .work__flex {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
   gap: 80px;
-  margin-top: 40px;
+  margin: 80px 0;
 }
 .work__title {
   font-size: 2rem;
 }
+.work__info {
+  margin-top: 1rem;
+}
+.work__info b {
+  color: red;
+}
+.work__info__last {
+  margin-bottom: 2rem;
+}
 
-.work__breadcrumb *, .work__breadcrumb *:after, .work__breadcrumb *:before {
+.work__breadcrumb *,
+.work__breadcrumb *:after,
+.work__breadcrumb *:before {
   box-sizing: border-box;
 }
 
@@ -388,7 +435,7 @@ h4 {
   padding: 0.7rem 1rem 0.7rem 2rem;
   text-decoration: none;
   color: #333333;
-  background-image: linear-gradient(to right, #ffffff, #26C6DA);
+  background-image: linear-gradient(to right, #ffffff, #0bd);
   transition: all 0.3s ease;
 }
 
@@ -416,13 +463,13 @@ h4 {
 
 .work__breadcrumb a::after {
   z-index: 2;
-  border-left-color: #26C6DA;
+  border-left-color: #0bd;
 }
 
 .work__breadcrumb a::before {
   z-index: 1;
   right: -1rem;
-  border-left-color: #00ACC1;
+  border-left-color: #0bd;
 }
 
 .work__breadcrumb a:hover::after {
@@ -446,13 +493,40 @@ h4 {
   content: normal;
 }
 
+@media (max-width: 768px) {
+  .work__flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 10px 20px;
+  }
+  .work__title {
+    font-size: 1.5rem;
+  }
+  .work__info__last {
+    margin-bottom: 2rem;
+  }
+  .work__breadcrumb {
+    margin-left: 1rem;
+  }
+  .work__breadcrumb li:last-child a {
+    display: none;
+  }
+}
 footer {
   background-image: url(../../images/blueroseline.gif);
   background-repeat: repeat-x;
+  height: auto;
 }
 
 .copy {
   margin-top: 100px;
+  padding: 50px 0 10px;
+  text-align: center;
+  font-family: "Miltonian Tattoo", serif;
+  font-size: 20px;
+}
+.copy__work {
+  margin: 100px;
   padding: 50px 0 10px;
   text-align: center;
   font-family: "Miltonian Tattoo", serif;
@@ -463,5 +537,16 @@ footer {
   text-align: center;
   margin-bottom: 10px;
   color: #6600cc;
+}
+
+@media (max-width: 768px) {
+  .copy {
+    margin-top: 50px;
+    font-size: 1rem;
+  }
+  .copy__work {
+    margin-top: 50px;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
