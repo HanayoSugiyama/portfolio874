@@ -59,3 +59,52 @@ $(".video-open").modaal({
    }
 });
 //モーダルここまで
+
+
+/*スライダー
+
+$('.slider').slick({
+  autoplay: true,//自動的に動き出す。
+  infinite: true,//スライドをループさせる。
+  speed: 500,//スライドのスピード。
+  slidesToShow: 3,//スライドを画面に3枚見せる
+  slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+  prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+  nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+  centerMode: true,//要素を中央ぞろえにする
+  variableWidth: true,//幅の違う画像の高さを揃えて表示
+  dots: true,//下部ドットナビゲーションの表示
+
+  
+});
+スライダーここまで*/
+
+$(window).on('load resize', function() {
+  if ($(window).width() < 768) {
+    $('.slider').slick({
+      autoplay: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: false,
+      nextArrow: false,
+      centerMode: true,
+      variableWidth: true,
+      dots: true,
+    });
+  } else {
+    $('.slider').slick({
+      autoplay: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<div class="slick-prev"></div>',
+      nextArrow: '<div class="slick-next"></div>',
+      centerMode: true,
+      variableWidth: true,
+      dots: true,
+    });
+  }
+});

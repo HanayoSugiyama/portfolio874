@@ -14,18 +14,19 @@
 
     <!--jquery-script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!--スライダー-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--モーダルcss-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <!--モーダルjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+
+    <!--自作にjs-->
     <script src="js/script.js" defer></script>
-
-
-    <!-- モーダルウィンドウ -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
-    <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
-
-    <!-- modal-video.jsのcss -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" />
-
-    <!-- modal-video.jsのjs -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/modal-video@2.4.6/js/jquery-modal-video.min.js"></script>
 
     <!--favion-->
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -243,76 +244,33 @@
                 <h2 id="works" class="title" data-en="Works"><span>作品</span></h2>
                 <div>
                     <h3 class="works__top">サイト作成</h3>
-                    <div class="works__site">
-                        <div class="works__sample">
-                            <p class="works__title">【架空サイト】蕎麦処健康堂<small>（入校4ヶ月目 課題）</small></p>
+                    <ul class="slider">
+                        <li>
                             <a class="hover" href="works/soba.html" target="_blank">
-                                <div class="works__site__img">
-                                    <img src="images/works/desktop-ondesk soba.jpg" alt="蕎麦処健康堂のサイトイメージ">
-                                </div>
+                                <p class="works__title">【架空サイト】蕎麦処健康堂</p>
+                                <img src="images/works/desktop-ondesk soba.jpg" alt="蕎麦処健康堂のサイトイメージ">
                             </a>
-                            <!--
-                            <p class="info">
-                                テーマ「健康」を食の面から考えて、蕎麦を食べることで健康になろう！と、蕎麦屋のサイトを作成しました。
-                                本来はカンプのみの課題でしたが、コーディングにも挑戦しました<br>
-                                写真2枚を加工し、GIFアニメを作成したところがポイントです。</p>
-                            <p>【使用したツール】<br>
-                                HTML5、css3、JavaScript、VSコード、Photoshop、Illustrator、Figma
-                            </p>
-                            -->
-                        </div>
-                        <div class="works__sample">
-                            <p class="works__title">【架空サイト】flowershop健康堂<small>（入校4ヶ月目 課題）</small></p>
+                        </li>
+                        <li>
                             <a class="hover" href="works/flowershop.html" target="_blank">
-                                <div class="works__site__img">
-                                    <img src="images/works/desktop-ondesk_hana.jpg" alt="フラワーショップ健康堂のサイトイメージ">
-                                </div>
+                                <p class="works__title">【架空サイト】flowershop健康堂</p>
+                                <img src="images/works/desktop-ondesk_hana.jpg" alt="フラワーショップ健康堂のサイトイメージ">
                             </a>
-                            <!--
-                            <p class="info">
-                                テーマ「健康」を視覚の面から考えて、花を愛でることで健康になろう！と花屋のサイトを作成しました。
-                                本来はカンプのみの課題でしたが、コーディングにも挑戦しました。
-                                提出は１点で良いところ、色々な機能を実装したかったので、クラスで唯一２点提出し、努力賞を頂戴しました。<br>
-                                マインドナンバー占いを作成したところがポイントです。</p>
-                            <p>【使用したツール】<br>
-                                HTML5、css3、JavaScript、VSコード、Photoshop、Illustrator、Figma
-                            </p>
-                            -->
-                        </div>
-                        <div class="works__sample">
-                            <p class="works__title">【卒業制作】梶村商店様ホームページ<small>（入校5ヶ月目 課題）</small></p>
+                        </li>
+                        <li>
                             <a class="hover" href="works/kajimura.html" target="_blank">
-                                <div class="works__site__img">
-                                    <img src="images/works/desktop-ondesk_kaji.jpg" alt="蕎麦処健康堂のサイトイメージ">
-                                </div>
+                                <p class="works__title">【卒業制作】梶村商店様ホームページ</p>
+                                <img src="images/works/desktop-ondesk_kaji.jpg" alt="梶村商店のサイトイメージ">
                             </a>
-                            <!--
-                            <p class="info">
-                                卒業制作として、チームで実在のお店のホームページを作成しました。<br>
-                                他のチームより１名人数が少なかったため、サブコーダーとサブディレクターを兼務しました。<br>
-                                【使用したツール】<br>
-                                HTML5、css3、VSコード、Photoshop、Figma
-                            </p>
-                            -->
-                        </div>
-
-                        <div class="works__sample">
-                            <p class="works__title">フリー素材サイトリンク集<small>（入校2ヶ月目 自主制作）</small></p>
+                        </li>
+                        <li>
                             <a class="hover" href="works/free.html" target="_blank">
-                                <div class="works__site__img">
-                                    <img src="images/works/desktop-ondesk_free.jpg" alt="蕎麦処健康堂のサイトイメージ">
-                                </div>
+                                <p class="works__title">フリー素材サイトリンク集</p>
+                                <img src="images/works/desktop-ondesk_free.jpg" alt="蕎麦処健康堂のサイトイメージ">
                             </a>
-                            <!--
-                            <p class="info">
-                                HTML、cssの授業でgridを学習した際、復習も兼ねて、活用できるサイトを自主作成しました。<br>
-                                リスト化することでサイト検索の時短にもなり一石二鳥以上の効果がありました。</p>
-                            <p>【使用したツール】<br>
-                                HTML5、css3、VSコード、Illustrator
-                            </p>
-                            -->
-                        </div>
-                    </div>
+                        </li>
+                        <!--/slider-->
+                    </ul>
                 </div>
 
                 <div>
