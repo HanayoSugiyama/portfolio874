@@ -183,8 +183,7 @@ h3 {
   width: 3rem;
 }
 
-/*ヘッダーの下に表示*/
-.contents__innre {
+s .contents__innre {
   padding-top: 50px;
   margin-top: -50px;
 }
@@ -232,11 +231,6 @@ h3 {
     display: none;
   }
 }
-.skill-flex {
-  width: 100%;
-  display: flex;
-}
-
 .check__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(278px, 1fr));
