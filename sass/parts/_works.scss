@@ -3,8 +3,6 @@
 //本体
 .works {
 
-
-  
   &__top {
     margin-top: 2rem;
   }
@@ -14,26 +12,7 @@
     margin-bottom: 1rem;
   }
 
-  &__site {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
-    gap: 40px 80px;
-    margin-top: 40px;
-
-
-    &__img {
-      text-align: center;
-      object-fit: contain;
-      height: 450px;
-
-      & img {
-
-        object-fit: contain;
-        height: 100%;
-      }
-    }
-  }
-
+ 
   &__design {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
@@ -282,6 +261,8 @@ a.hover:hover {
       }
     }
 
+
+
   }
   .work__breadcrumb{
     margin-left: 1rem;
@@ -363,4 +344,17 @@ margin:0 5px;
 .slick-dots .slick-active button{
   background:#333;/*ドットボタンの現在地表示の色*/
 }
+@media (max-width: 768px) {
+  .works {
+    &__site{
+      &__img{
+        display: block;
+        width: 350px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
 //スライダーここまで

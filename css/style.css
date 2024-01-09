@@ -32,6 +32,16 @@ ol {
   list-style: none;
 }
 
+h3 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .title {
   margin-top: 100px;
   position: relative;
@@ -95,17 +105,12 @@ ol {
     margin-left: 1rem;
   }
 }
-h3 {
-  font-size: 24px;
-  text-align: left;
+.top__link {
+  display: none;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.go-top img {
+.top__link.open {
+  display: block;
   position: fixed;
   right: 20px;
   bottom: 30px;
@@ -129,6 +134,59 @@ h3 {
   font-size: 100px;
   text-align: center;
   margin-bottom: 250px;
+}
+
+#global-nav {
+  background-color: #fffff9;
+  width: 100%;
+  z-index: 999;
+}
+
+#global-nav.m_fixed {
+  left: 0;
+  position: fixed;
+  top: 0;
+}
+
+#header {
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
+
+.header__nav__list {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.header__nav__item {
+  display: inline-block;
+  padding: 1rem 3rem 1rem;
+  position: relative;
+}
+
+.header__nav__item a {
+  position: static;
+}
+
+.header__nav__item a img {
+  position: absolute;
+  opacity: 0;
+}
+
+.header__nav__item a:hover img {
+  opacity: 1;
+  margin: 0 auto;
+  width: 3rem;
+}
+
+/*ヘッダーの下に表示*/
+.contents__innre {
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 .profile {
@@ -283,23 +341,6 @@ h4 {
 .works__title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-}
-.works__site {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
-  gap: 40px 80px;
-  margin-top: 40px;
-}
-.works__site__img {
-  text-align: center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 450px;
-}
-.works__site__img img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 100%;
 }
 .works__design {
   display: grid;
@@ -582,6 +623,13 @@ a.hover:hover {
   background: #333; /*ドットボタンの現在地表示の色*/
 }
 
+@media (max-width: 768px) {
+  .works__site__img {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+}
 footer {
   background-image: url(../../images/blueroseline.gif);
   background-repeat: repeat-x;

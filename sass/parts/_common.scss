@@ -12,14 +12,12 @@ html {
 	/*ユーザーが指定しているブラウザの文字サイズを正しく反映させる*/
 }
 
-
 body {
 	color: v.$c-font;
-	background-image: linear-gradient(-20deg, #ddd6f3 0%,rgba(251,218,222,0.5) 100%, rgba(251,218,222,0.5) 100%);
+	background-image: linear-gradient(-20deg, #ddd6f3 0%, rgba(251, 218, 222, 0.5) 100%, rgba(251, 218, 222, 0.5) 100%);
 	font-family: v.$ff-normal;
 	font-size: 16px;
 }
-
 
 img {
 	max-width: 100%;
@@ -31,10 +29,19 @@ a {
 	text-decoration: none;
 }
 
-
 ul,
 ol {
 	list-style: none;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: left;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 
@@ -44,7 +51,7 @@ ol {
 	position: relative;
 	padding-left: 40px;
 	font-size: 48px;
-	padding-top:20px;
+	padding-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -62,7 +69,7 @@ ol {
 	/*斜めに傾ける*/
 	top: 0;
 	left: 0;
-	color:#0bd;
+	color: #0bd;
 	font-size: 60px;
 	font-weight: 400;
 	font-family: v.$ff-cursive
@@ -75,7 +82,7 @@ ol {
 	position: relative;
 	padding-left: 40px;
 	font-size: 48px;
-	padding-top:20px;
+	padding-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -93,38 +100,32 @@ ol {
 	/*斜めに傾ける*/
 	top: 0;
 	left: 0;
-	color:#0bd;
+	color: #0bd;
 	font-size: 60px;
 	font-weight: 400;
 	font-family: v.$ff-cursive
 }
+
 @media (max-width: 768px) {
-	.workstitle{
+	.workstitle {
 		margin-left: 1rem;
 	}
 }
 //ここまでリンク先セクションタイトル設定
 
-h3 {
-	font-size: 24px;
-	text-align: left;
+//topへもどるリンク 500pxで切り替え
+.top__link {
+	display: none;
 }
 
-
-
-.wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.go-top img {
+.top__link.open {
+	display: block;
 	position: fixed;
 	right: 20px;
 	bottom: 30px;
 	width: 70px;
 	height: auto;
 }
-
-
+//ここまでtopへもどるリンク 500pxで切り替え
 
 @media (max-width: 768px) {}

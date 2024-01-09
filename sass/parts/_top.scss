@@ -23,3 +23,65 @@
         margin-bottom: 250px;
     }
 }
+
+
+//gnav
+#global-nav {
+	background-color: v.$c-bg;
+	width: 100%;
+    z-index: 999;//最前面
+}
+
+#global-nav.m_fixed {
+	left: 0;
+	position: fixed;
+	top: 0;
+}
+
+
+#header {
+  
+    margin: 0 auto;
+    text-align: center;
+  
+
+    
+    background-size: cover;
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.header__nav__list {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.header__nav__item {
+    display: inline-block;
+    padding: 1rem 3rem 1rem;
+    position: relative;
+}
+
+.header__nav__item a {
+    position: static;
+}
+
+.header__nav__item a img {
+    position: absolute;
+    opacity: 0;
+}
+
+.header__nav__item a:hover img {
+    opacity: 1;
+    margin: 0 auto;
+    width: 3rem;
+}
+
+
+
+/*ヘッダーの下に表示*/
+.contents__innre {
+    padding-top: 50px;
+    margin-top: -50px;
+}

@@ -61,7 +61,9 @@ $(".video-open").modaal({
 //モーダルここまで
 
 
-/*スライダー
+//スライダー
+if (window.matchMedia("(max-width: 768px)").matches) {
+  document.getElementsByClassName("slider")[0].classList.remove("slider");}
 
 $('.slider').slick({
   autoplay: true,//自動的に動き出す。
@@ -74,37 +76,38 @@ $('.slider').slick({
   centerMode: true,//要素を中央ぞろえにする
   variableWidth: true,//幅の違う画像の高さを揃えて表示
   dots: true,//下部ドットナビゲーションの表示
-
-  
+ 
 });
-スライダーここまで*/
 
-$(window).on('load resize', function() {
-  if ($(window).width() < 768) {
-    $('.slider').slick({
-      autoplay: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: false,
-      nextArrow: false,
-      centerMode: true,
-      variableWidth: true,
-      dots: true,
-    });
+
+
+
+//TOPへ戻るの設定
+//上から500以上スクロールしたら#page-topに.openを追加し、300未満の時は.openを外す
+const getScrollY = () => {
+  const scrolled = window.scrollY;
+
+  //付け外ししたい要素の取得
+  const pageTop = document.querySelector('#page-top');
+
+  if (scrolled >= 500) {
+      pageTop.classList.add('open')
   } else {
-    $('.slider').slick({
-      autoplay: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: '<div class="slick-prev"></div>',
-      nextArrow: '<div class="slick-next"></div>',
-      centerMode: true,
-      variableWidth: true,
-      dots: true,
-    });
+      pageTop.classList.remove('open')
   }
+};
+
+window.addEventListener('scroll', getScrollY);
+//ここまでTOPへ戻るの設定
+
+var navPos = jQuery( '#global-nav' ).offset().top; // グローバルメニューの位置
+var navHeight = jQuery( '#global-nav' ).outerHeight(); // グローバルメニューの高さ
+jQuery( window ).on( 'scroll', function() {
+	if ( jQuery( this ).scrollTop() > navPos ) {
+		jQuery( 'body' ).css( 'padding-top', navHeight );
+		jQuery( '#global-nav' ).addClass( 'm_fixed' );
+	} else {
+		jQuery( 'body' ).css( 'padding-top', 0 );
+		jQuery( '#global-nav' ).removeClass( 'm_fixed' );
+	}
 });
