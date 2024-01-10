@@ -26,19 +26,18 @@
 
 
 //gnav
-#global-nav {
-	background-color: v.$c-bg;
-	width: 100%;
-    z-index: 999;//最前面
+#global-nav{
+    opacity: 0;
 }
 
-#global-nav.m_fixed {
-	left: 0;
+#global-nav.m_fixed{
+    opacity: 1;
+    left: 0;
 	position: fixed;
 	top: 0;
-}
-
-#header {
+    background-color: v.$c-bg;
+	width: 100%;
+    z-index: 999;//最前面
     margin: 0 auto;
     text-align: center;
     background-size: cover;
@@ -59,6 +58,8 @@
 }
 
 .header__nav__item a {
+
+
     position: static;
 }
 
@@ -72,7 +73,7 @@
     margin: 0 auto;
     width: 3rem;
 }
-s
+
 /*ヘッダーの下に表示*/
 .contents__innre {
     padding-top: 50px;
