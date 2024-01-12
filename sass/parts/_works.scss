@@ -18,6 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
     gap: 80px;
     margin-top: 40px;
+   
 
 
     &__img {
@@ -26,7 +27,7 @@
       height: 350px;
 
       & img {
-
+        background-color: #b3d9ff;
         object-fit: contain;
         height: 100%;
       }
