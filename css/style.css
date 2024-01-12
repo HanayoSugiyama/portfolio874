@@ -42,6 +42,14 @@ h3 {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
 .title {
   margin-top: 100px;
   position: relative;
@@ -71,6 +79,14 @@ h3 {
   font-family: "Ephesis", cursive;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .title::before {
+    content: none;
+  }
+}
 .workstitle {
   margin-top: 50px;
   position: relative;
@@ -136,6 +152,13 @@ h3 {
   margin-bottom: 250px;
 }
 
+@media (max-width: 768px) {
+  .top__text {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 #global-nav {
   opacity: 0;
 }
@@ -199,9 +222,10 @@ h3 {
 }
 .profile__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding: 0 10px;
 }
 .profile__name {
   margin-bottom: 1rem;
@@ -218,6 +242,15 @@ h3 {
 }
 
 @media (max-width: 1030px) {
+  .profile__grid {
+    gap: 10px;
+  }
+  .history ol {
+    font-size: 12px;
+  }
+  .history dl {
+    font-size: 12px;
+  }
   .history-flex {
     display: block;
   }
@@ -247,6 +280,15 @@ h3 {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .check__list img {
+    display: none;
+  }
+  .cap {
+    display: block;
+    height: 250px;
+  }
+}
 /* 回転Y軸 */
 .flipY a {
   /*テキストの基点となる位置を定義*/
@@ -337,9 +379,10 @@ h4 {
 }
 .works__design {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 80px;
   margin-top: 40px;
+  padding: 0 10px;
 }
 .works__design__img {
   text-align: center;
@@ -352,11 +395,15 @@ h4 {
      object-fit: contain;
   height: 100%;
 }
+.works__design__img__meisitate {
+  display: none;
+}
 .works__app {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 80px;
   margin-top: 40px;
+  padding: 0 10px;
 }
 .works__app__img {
   text-align: center;
@@ -385,6 +432,130 @@ h4 {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .works__title {
+    font-size: 12px;
+  }
+  .works__design__img {
+    height: auto;
+  }
+  .works__design__img img {
+    background-color: transparent;
+  }
+  .works__design__img__meisiyoko {
+    display: none;
+  }
+  .works__design__img__meisitate {
+    display: block;
+    margin: auto;
+    height: auto;
+  }
+  .works__app__img {
+    height: auto;
+  }
+  .app__content__btn a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 220px;
+    padding: 10px 25px;
+  }
+}
+.slider {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 400px;
+  height: auto;
+}
+
+.slider .slick-slide {
+  transform: scale(0.8);
+  /*左右の画像のサイズを80%に*/
+  transition: all 0.5s;
+  /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;
+  /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+  transform: scale(1);
+  /*中央の画像のサイズだけ等倍に*/
+  opacity: 1;
+  /*透過なし*/
+}
+
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -15%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -15%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+@media (max-width: 768px) {
+  .works__site__img {
+    display: block;
+    width: 350px;
+    margin: auto;
+  }
+}
 a.hover:hover {
   cursor: url(../images/click.png), auto;
 }
@@ -413,17 +584,6 @@ a.hover:hover {
   padding: 100px;
 }
 
-@media (max-width: 768px) {
-  .app__content__btn a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 220px;
-    padding: 10px 25px;
-  }
-}
 .work__flex {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
@@ -545,83 +705,6 @@ a.hover:hover {
   }
   .work__breadcrumb li:last-child a {
     display: none;
-  }
-}
-.slider {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.slider img {
-  width: 400px;
-  height: auto;
-}
-
-.slider .slick-slide {
-  transform: scale(0.8); /*左右の画像のサイズを80%に*/
-  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5; /*透過50%*/
-}
-
-.slider .slick-slide.slick-center {
-  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
-  opacity: 1; /*透過なし*/
-}
-
-/*矢印の設定*/
-/*戻る、次へ矢印の位置*/
-.slick-prev,
-.slick-next {
-  position: absolute; /*絶対配置にする*/
-  top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #666; /*矢印の色*/
-  border-right: 2px solid #666; /*矢印の色*/
-  height: 15px;
-  width: 15px;
-}
-
-.slick-prev { /*戻る矢印の位置と形状*/
-  left: -15%;
-  transform: rotate(-135deg);
-}
-
-.slick-next { /*次へ矢印の位置と形状*/
-  right: -15%;
-  transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-.slick-dots {
-  text-align: center;
-  margin: 20px 0 0 0;
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slick-dots button {
-  color: transparent;
-  outline: none;
-  width: 8px; /*ドットボタンのサイズ*/
-  height: 8px; /*ドットボタンのサイズ*/
-  display: block;
-  border-radius: 50%;
-  background: #ccc; /*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button {
-  background: #333; /*ドットボタンの現在地表示の色*/
-}
-
-@media (max-width: 768px) {
-  .works__site__img {
-    display: block;
-    width: 350px;
-    margin: 0 auto;
   }
 }
 footer {

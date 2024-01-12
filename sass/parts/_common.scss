@@ -43,7 +43,15 @@ h3 {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+@media (max-width: 768px) {
+	h3 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 12px;
+	}
 
+}
 
 //セクションタイトル設定
 .title {
@@ -74,6 +82,15 @@ h3 {
 	font-weight: 400;
 	font-family: v.$ff-cursive
 }
+@media (max-width: 768px) {
+	.title {
+		font-size: 2rem;
+	}
+	.title::before {
+		content:none;
+	}
+}
+
 //ここまでセクションタイトル設定
 
 //リンク先セクションタイトル設定

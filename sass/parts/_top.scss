@@ -23,7 +23,15 @@
         margin-bottom: 250px;
     }
 }
-
+@media (max-width: 768px) {
+.top{
+    &__text {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+}
 
 //gnav
 #global-nav{
