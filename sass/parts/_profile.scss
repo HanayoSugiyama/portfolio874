@@ -12,7 +12,7 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 2rem;
         margin-top: 2rem;
         padding: 0 10px;
@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 768px) {
     .profile{
         &__grid{
             gap:10px

@@ -43,10 +43,12 @@ h3 {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
 @media (max-width: 768px) {
 	h3 {
 		font-size: 16px;
 	}
+
 	p {
 		font-size: 12px;
 	}
@@ -82,12 +84,19 @@ h3 {
 	font-weight: 400;
 	font-family: v.$ff-cursive
 }
+
 @media (max-width: 768px) {
 	.title {
+		margin-top: 50px;
 		font-size: 2rem;
+		padding-left: 0px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
 	}
+
 	.title::before {
-		content:none;
+		content: none;
 	}
 }
 
@@ -128,6 +137,7 @@ h3 {
 		margin-left: 1rem;
 	}
 }
+
 //ここまでリンク先セクションタイトル設定
 
 //topへもどるリンク 500pxで切り替え
@@ -143,6 +153,7 @@ h3 {
 	width: 70px;
 	height: auto;
 }
+
 //ここまでtopへもどるリンク 500pxで切り替え
 
 @media (max-width: 768px) {}

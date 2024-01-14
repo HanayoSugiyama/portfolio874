@@ -15,12 +15,6 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .check__list img {
-    display: none;
-  }
-}
-
 /* 回転Y軸 */
 
 .flipY a {
@@ -57,7 +51,7 @@
   transform-origin: 50% 0%;
   /*回転する基点*/
   opacity: 0;
-  background:  #fff9ff;
+  background: #fff9ff;
   /*背景色*/
   border-radius: 20px;
   padding: 1rem;
@@ -88,29 +82,68 @@ h4 {
 .after {
   margin: 1rem 0;
 }
+
 @media (max-width: 768px) {
+  .info-hover {
+    opacity: 0;
+  }
+
+  .flipY a:hover img {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+
+  .flipY div.cap {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+
+  .check {
+    &__list {
+      padding: 10px;
+
+    }
+
+    .flip {
+      height: 250px;
+    }
+  }
 
 }
+
+
 
 /*資格一覧*/
 
 .test {
- 
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1rem;
-    padding: 2rem;
+    padding: 10px;
   }
 
   &__title {
     font-size: 24px;
-  } 
- 
+  }
+
   &__ul {
-   padding-top: 1rem;
+    padding-top: 1rem;
   }
 }
 
+@media (max-width: 768px) {
+  .test {
+    margin: 0 10px;
 
+    &__title {
+      font-size: 16px;
+    }
 
+    &__ul {
+      font-size: 12px;
+      padding-top: 10px;
+    }
+  }
+}

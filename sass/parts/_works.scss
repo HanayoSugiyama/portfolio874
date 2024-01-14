@@ -15,7 +15,7 @@
 
   &__design {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 80px;
     margin-top: 40px;
     padding: 0 10px;
@@ -40,7 +40,7 @@
 
   &__app {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 80px;
     margin-top: 40px;
     padding: 0 10px;
@@ -78,11 +78,13 @@
 
 @media (max-width: 768px) {
   .works {
+    margin: 0 10px;
     &__title{
       font-size: 12px;
     }
 
     &__design {
+      margin-top: 10px;
       &__img {
         height: auto;
 
@@ -98,22 +100,30 @@
           display: block;
           margin: auto;
           height: auto;
+
         }
       }
     }
  
     &__app {
+      margin-top: 10px;
       &__img {
         height: auto;
       }
-     
     }
+    &__event{
+      margin-top: 10px;
+      gap: 10px;
+      &__img {
+      padding: 0 10px;
+      }
+    }
+
   }
 
   .app {
     &__content {
       &__btn a {
-
         position: relative;
         display: flex;
         justify-content: center;
@@ -123,6 +133,9 @@
         padding: 10px 25px;
       }
     }
+  }
+  .event{
+    margin: 0 10px;
   }
 
 }
@@ -222,7 +235,11 @@
         display: block;
         width: 350px;
         margin: auto;
+        padding: 0 10px;
       }
+    }
+    &__title{
+        margin-top: 10px;
     }
   }
 }
@@ -392,7 +409,6 @@ a.hover:hover {
     &__flex {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-
       margin: 10px 20px;
     }
 
