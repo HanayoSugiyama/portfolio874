@@ -2,7 +2,7 @@
 
 setTimeout(function() {
   document.querySelector('.top__gif').style.display = 'none';
-}, 7500);
+}, 10000);
 
 
 //モーダル
