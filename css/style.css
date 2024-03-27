@@ -141,7 +141,7 @@ h3 {
 
 .top {
   background: #4CA1AF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #8ed9e5, #eef7f9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, #baecf4, #eef7f9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .top__gif {
   display: block;
@@ -152,14 +152,14 @@ h3 {
 }
 .top__text {
   font-family: "Miltonian Tattoo", serif;
-  font-size: 50px;
+  font-size: 64px;
   text-align: center;
   margin-bottom: 240px;
 }
 .top__text__sub {
   margin-top: 20px;
   font-family: "Kaisei Opti", serif;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
