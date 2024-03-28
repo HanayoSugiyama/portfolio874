@@ -12,7 +12,7 @@ html {
 
 body {
   color: #333333;
-  background-image: linear-gradient(-20deg, #ddd6f3 0%, rgba(251, 218, 222, 0.5) 100%, rgba(251, 218, 222, 0.5) 100%);
+  background-color: #f0f8ff;
   font-family: "Kaisei Opti", serif;
   font-size: 16px;
 }
@@ -140,7 +140,7 @@ h3 {
 }
 
 .top {
-  background: #4CA1AF; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: #82dbe8; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #baecf4, #eef7f9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .top__gif {
@@ -178,7 +178,7 @@ h3 {
   left: 0;
   position: fixed;
   top: 0;
-  background-color: #fffff9;
+  background-color: #fff9ff;
   width: 100%;
   z-index: 999;
   margin: 0 auto;
@@ -521,7 +521,7 @@ h4 {
   }
 }
 .slider {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 
