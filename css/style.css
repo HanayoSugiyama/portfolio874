@@ -178,19 +178,23 @@ h3 {
   left: 0;
   position: fixed;
   top: 0;
-  background-color: #fff9ff;
+  background-image: url(../../images/top/rose.gif);
+  background-repeat: repeat-x;
   width: 100%;
   z-index: 999;
   margin: 0 auto;
   text-align: center;
-  background-size: cover;
+  background-size: auto;
   box-sizing: border-box;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .header__nav__list {
   display: flex;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #fff, -2px 2px 0 #fff, 2px -2px 0 #fff, -2px -2px 0 #fff;
   justify-content: center;
 }
 
@@ -462,7 +466,6 @@ h4 {
 .works__event__img {
   text-align: center;
   margin-bottom: 30px;
-  height: 200px;
 }
 .works__event__img img {
   -o-object-fit: contain;
