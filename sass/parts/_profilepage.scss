@@ -1,0 +1,57 @@
+@use "variables"as v;
+
+.profile{
+    background-color: #333;
+    padding-top: 50px;
+    
+    &__bottom {
+        display: flex;
+        justify-content: center;
+    }
+    &__img{
+        filter: brightness(110%);
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.slideshow li{
+    width: 450px;
+}
+
+.wrap {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.slideshow {
+    display: flex;
+    animation: loop-slide 30s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+
+.slide-paused:hover .slideshow {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.content-hover {
+    transition: all 0.5s;
+}
+.content-hover:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 3px 10px 0 #333;
+
+    cursor: pointer;
+}

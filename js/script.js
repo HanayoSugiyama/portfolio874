@@ -38,8 +38,6 @@ $('.slider').slick({
 });
 
 
-
-
 //TOPへ戻るの設定
 //上から500以上スクロールしたら#page-topに.openを追加し、300未満の時は.openを外す
 const getScrollY = () => {
