@@ -284,15 +284,15 @@ h3 {
     display: none;
   }
 }
-.profile {
+.profilepage {
   background-color: #333;
   padding-top: 50px;
 }
-.profile__bottom {
+.profilepage__bottom {
   display: flex;
   justify-content: center;
 }
-.profile__img {
+.profilepage__img {
   filter: brightness(110%);
   width: 80%;
   position: absolute;
