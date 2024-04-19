@@ -17,7 +17,7 @@ $(".video-open").modaal({
    }
 });
 //モーダルここまで
-
+/*  */
 
 //スライダー
 if (window.matchMedia("(max-width: 768px)").matches) {
