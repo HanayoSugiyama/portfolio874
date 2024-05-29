@@ -254,6 +254,10 @@ h3 {
   margin: 0 auto;
 }
 
+.history__content {
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .profile__grid {
     gap: 10px;

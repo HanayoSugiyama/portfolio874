@@ -21,22 +21,29 @@
     &__name {
         margin-bottom: 1rem;
     }
+
     &__theme {
         &__photo {
             margin: 0 auto;
-           
+
         }
+    }
+}
+
+.history {
+    &__content {
+        margin-top: 1rem;
     }
 }
 
 
 @media (max-width: 768px) {
-    .profile{
-        &__grid{
-            gap:10px
+    .profile {
+        &__grid {
+            gap: 10px
         }
     }
-   
+
 
     .opa {
         max-width: 700px;
