@@ -252,6 +252,7 @@ h3 {
 }
 .profile__theme__photo {
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .history__content {
