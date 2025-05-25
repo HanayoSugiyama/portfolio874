@@ -37,6 +37,13 @@ h3 {
   text-align: left;
 }
 
+h1 {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
