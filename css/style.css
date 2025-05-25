@@ -49,6 +49,12 @@ h1 {
   margin: 0 auto;
 }
 
+.fight {
+  font-size: 1rem;
+  font-family: "Kaisei Opti", serif;
+  color: red;
+}
+
 @media (max-width: 768px) {
   h3 {
     font-size: 16px;
@@ -515,15 +521,6 @@ h4 {
      object-fit: contain;
   height: 100%;
 }
-.works__app__content__btn a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 220px;
-  padding: 10px 25px;
-}
 .works__event {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
@@ -538,6 +535,10 @@ h4 {
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
+}
+
+.app__content__tool {
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) {

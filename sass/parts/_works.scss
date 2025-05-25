@@ -75,7 +75,13 @@
     }
   }
 }
-
+.app {
+  &__content {
+    &__tool {
+      margin-top: 1rem;
+    }
+  }
+}
 @media (max-width: 768px) {
   .works {
     margin: 0 10px;
