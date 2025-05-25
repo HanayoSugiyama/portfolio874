@@ -515,6 +515,9 @@ h4 {
      object-fit: contain;
   height: 100%;
 }
+.works__app__content__tool {
+  padding-top: 1rem;
+}
 .works__event {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
@@ -689,6 +692,7 @@ a.hover:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
   margin-left: auto;
   max-width: 220px;
   padding: 10px 25px;

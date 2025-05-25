@@ -55,6 +55,11 @@
         height: 100%;
       }
     }
+    &__content {
+      &__tool {
+        padding-top: 1rem;
+      }
+    }
   }
 
   &__event {
@@ -134,6 +139,7 @@
       }
     }
   }
+
   .event{
     margin: 0 10px;
   }
@@ -263,6 +269,7 @@ a.hover:hover {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 1rem;
       margin-left: auto;
       max-width: 220px;
       padding: 10px 25px;
