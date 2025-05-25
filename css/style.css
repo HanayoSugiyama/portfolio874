@@ -159,9 +159,9 @@ h1 {
 }
 .top__text {
   font-family: "Ballet", serif;
-  font-size: 64px;
+  font-size: 96px;
   text-align: center;
-  margin-bottom: 240px;
+  margin-bottom: 96px;
 }
 .top__text__sub {
   margin-top: 20px;
@@ -185,7 +185,9 @@ h1 {
   left: 0;
   position: fixed;
   top: 0;
-  background-image: url(../../images/top/bluerose.gif);
+  background-image: url(../../images/top/bluerose.png);
+  background-size: 10%;
+  background-color: #fff;
   background-repeat: repeat-x;
   width: 100%;
   z-index: 999;
