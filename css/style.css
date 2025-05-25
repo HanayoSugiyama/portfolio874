@@ -515,8 +515,14 @@ h4 {
      object-fit: contain;
   height: 100%;
 }
-.works__app__content__tool {
-  padding-top: 1rem;
+.works__app__content__btn a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 220px;
+  padding: 10px 25px;
 }
 .works__event {
   display: grid;
