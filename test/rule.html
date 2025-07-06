@@ -16,13 +16,6 @@
     <!--自作のJS-->
     <script src="js/script.js" defer></script>
 
-    <script>
-        var password = prompt("パスワードを入力してください:");
-        if (password !== "12") {
-            alert("パスワードが違います。");
-            window.location.href = "/"; // トップに戻す
-        }
-    </script>
     <!--favion-->
     <link rel="icon" href="../images/favicon.png" type="image/png">
     <title>プロフィール|874 portfolio</title>
@@ -32,19 +25,20 @@
     <main>
         <div class="wrapper">
             <div class="testpage">
-                <h3>職員用ページ</h3>
-                <p>ここは職員専用のコンテンツです。</p>
-
-                <div class="testpage__grid">
-                    <ul class="check__list">
-                        <li class="chack__item flipY"><a href="rule.html">就業規則</a></li>
-                        <li class="chack__item flipY">申請書類</li>
-                        <li class="chack__item flipY">マニュアル</li>
-                    </ul>
+                <h3>就業規則</h3>
+                <div class="test__grid">
+                    <div><a href="../images/test/syugyokisoku-tyushou.pdf" target="_blank"><img src="../images/test/syugyokisoku_syuusyou-1.jpg" alt=""></a>
+                    </div>
+                    <div><a href="../images/test/syugyokisoku-part.pdf" target="_blank"><img src="../images/test/syugyokisoku_part-1.jpg" alt=""></a>
+                    </div>
+                     <div><a href="../images/test/syugyokisoku.pdf" target="_blank"><img src="../images/test/syugyokisoku_1.jpg" alt=""></a>
+                    </div>
                 </div>
             </div>
+            <div><a href="test.html"><h3>職員用ページに戻る</h3></a></div>
         </div>
     </main>
+
 </body>
 
 </html>
